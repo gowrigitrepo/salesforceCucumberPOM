@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-31T10:34:22 EDT" name="Default suite" finished-at="2022-05-31T10:34:44 EDT" duration-ms="22045">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-05-31T10:34:22 EDT" name="Default test" finished-at="2022-05-31T10:34:44 EDT" duration-ms="22045">
+      <class name="com.salesforce.runners.SalesforceRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:22 EDT" name="setUpClass" finished-at="2022-05-31T10:34:23 EDT" duration-ms="424" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@309dcdf3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:23 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T10:34:28 EDT" duration-ms="5724" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct user name and correct password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Salesforce Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Welcome to your free trial.] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Welcome to your free trial.] but found []
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at com.salesforce.steps.SalesforceStepDefinition.verify_page_title_as_on(SalesforceStepDefinition.java:71)
+at ✽.Verify page title as "Welcome to your free trial." on "HomePage"(file:///C:/Users/gowri/eclipse-workspace/SalesforceCucumberFrameworkPOM/src/test/resources/com/salesforce/features/SalesforceApplication.feature:15)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:28 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T10:34:31 EDT" duration-ms="2881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct user name and clear password field"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Salesforce Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:31 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T10:34:38 EDT" duration-ms="6926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct user name and password and click remember check"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Salesforce Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:38 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T10:34:41 EDT" duration-ms="3069" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with correct user name and click forget password link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Salesforce Application"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.getTitle()" because "this.driver" is null
+at com.salesforce.pages.loginpages.LoginCheckEmailPage.getCheckEmailTitle(LoginCheckEmailPage.java:15)
+at com.salesforce.steps.SalesforceStepDefinition.verify_page_title_as_on(SalesforceStepDefinition.java:74)
+at ✽.Verify page title as "Check Your Email | Salesforce" on "LoginCheckEmailPage"(file:///C:/Users/gowri/eclipse-workspace/SalesforceCucumberFrameworkPOM/src/test/resources/com/salesforce/features/SalesforceApplication.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:41 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-31T10:34:44 EDT" duration-ms="2953" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login with wrong user name and wrong password"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login to Salesforce Application"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.salesforce.runners.SalesforceRunner@2d7275fc]" started-at="2022-05-31T10:34:44 EDT" name="tearDownClass" finished-at="2022-05-31T10:34:44 EDT" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.salesforce.runners.SalesforceRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
